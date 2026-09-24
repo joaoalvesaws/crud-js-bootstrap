@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="card-text text-muted small">${work.description}</p>
           </div>
           <div class="card-footer bg-transparent border-top-0 d-flex justify-content-end gap-2 pb-3">
+            <a class="btn btn-sm btn-outline-primary mr-2" href="tasks.html" target="_blank" rel="noopener noreferrer">Abrir tasks</a>
             <button class="btn btn-sm btn-outline-secondary mr-2" data-id="${work.id}" id="edit-${work.id}" data-action="edit">Editar</button>
             <button class="btn btn-sm btn-outline-danger" data-id="${work.id}" id="delete-${work.id}" data-action="delete">Excluir</button>
           </div>
