@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     return `
       <div class="col-sm-6 col-lg-4 mb-4" id="work-${work.id}">
         <div class="card h-100 shadow-sm">
-          <img src="${work.coverImage}" class="card-img-top" alt="Capa do Projeto" style="height: 160px; object-fit: cover;">
+          <img src="${work.coverImage}" class="card-img-top" alt="${work.title}" data-id="${work.id}" data-action="view" role="button" tabindex="0" title="Clique para ver a foto completa" style="height: 160px; object-fit: cover; cursor: pointer;">
           <div class="card-body">
             <span class="badge badge-primary mb-2">${work.class}</span>
             <h5 class="card-title font-weight-bold text-dark">${work.title}</h5>
             <p class="card-text text-muted small">${work.description}</p>
           </div>
           <div class="card-footer bg-transparent border-top-0 d-flex justify-content-end gap-2 pb-3">
-            <a class="btn btn-sm btn-outline-primary mr-2" href="tasks.html" target="_blank" rel="noopener noreferrer">Abrir tasks</a>
+            <button type="button" class="btn btn-sm btn-primary mr-2" data-id="${work.id}" data-action="view">Ver foto</button>
             <button class="btn btn-sm btn-outline-secondary mr-2" data-id="${work.id}" id="edit-${work.id}" data-action="edit">Editar</button>
             <button class="btn btn-sm btn-outline-danger" data-id="${work.id}" id="delete-${work.id}" data-action="delete">Excluir</button>
           </div>
@@ -68,6 +68,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // --- UPDATE & DELETE: Delegação de eventos no container ---
   workContainer.addEventListener('click', (e) => {
+
+    // Ação: visualizar foto completa
+    if (e.target.dataset.action === 'view') {
+      const workData = allwork.find(work => work.id == e.target.dataset.id);
+
+      if (workData) {
+        document.querySelector('#modal-photo').src = workData.coverImage;
+        document.querySelector('#modal-photo').alt = workData.title;
+        document.querySelector('#modal-title').textContent = workData.title;
+        document.querySelector('#modal-class').textContent = workData.class;
+        document.querySelector('#modal-description').textContent = workData.description;
+        $('#photo-modal').modal('show');
+      }
+      return;
+    }
     
     // Ação: Editar
     if (e.target.dataset.action === 'edit') {
