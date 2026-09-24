@@ -1,10 +1,10 @@
 {
   "work": [
     {
-      "title": "Trabalho 04",
-      "class": "Ciênciag",
-      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQd8XWDC3IfLPRfGAIUzhg6KJnBa3iFZtvg&s",
-      "description": "Link de img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQd8XWDC3IfLPRfGAIUzhg6KJnBa3iFZtvg&s",
+      "title": "Cafe",
+      "class": "Cafe",
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPNqnEDvR3vzEA9BrdHMufvvhqJyYa7uXk48BCwFScEbSGDOjsG-sFJo&s=10",
+      "description": "Imagem de Cafe para amigos",
       "id": "5"
     },
     {
@@ -15,13 +15,12 @@
       "id": "HhglQJd7Y94"
     },
     {
-      "title": "tbvc",
-      "class": "gggc",
-      "coverImage": "https://ciclovivo.com.br/inovacao/inspiracao/as-fotos-mais-impressionantes-do-mundo-natural/",
-      "description": "hvhvhv",
+      "title": "Pomba Branca",
+      "class": "Animais",
+      "coverImage": "https://ecards.joliecarte.com/20387/bom-dia-dia-abencoado-com-jesus.jpg",
+      "description": "Foto de Pomba Branca para amigos",
       "id": "wSoHlCKBmiU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
-  
 }
