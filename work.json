@@ -20,6 +20,20 @@
       "coverImage": "https://ecards.joliecarte.com/20387/bom-dia-dia-abencoado-com-jesus.jpg",
       "description": "Foto de Pomba Branca para amigos",
       "id": "wSoHlCKBmiU"
+    },
+    {
+      "title": "Sol",
+      "class": "Natureza",
+      "coverImage": "https://media.tenor.com/y3oaXzpRwOEAAAAM/bom-dia-bom-dia-meu-amor.gif",
+      "description": "Gif do Sol",
+      "id": "EB7rkTh-tcQ"
+    },
+    {
+      "title": "Crianca",
+      "class": "Pessoas",
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzf_MBl-kFlhge-HFtLuw9jIIx7IWhNKTEjs3jISVJ_UDfIfltoDszC3d&s=10",
+      "description": "Foto de crianca",
+      "id": "YAlgA-1bltA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
